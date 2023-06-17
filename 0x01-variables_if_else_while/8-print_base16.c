@@ -9,8 +9,8 @@ int main(void)
 {
 	char c;
 
-	c = 0;
-	while (c < 10)
+	c = 48;
+	while (c < 58)
 	{
 		putchar(c);
 		c++;
