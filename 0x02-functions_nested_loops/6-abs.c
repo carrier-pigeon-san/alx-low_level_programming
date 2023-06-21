@@ -5,16 +5,17 @@
  *
  * Return: Always 0 (Success)
  */
-int _abs(int)
+int _abs(int);
+int _abs(int n)
 {
 
-	if (int < 0)
+	if (n < 0)
 	{
-		_putchar(int * -1);
+		_putchar(n * -1);
 	}
 	else
 	{
-		_putchar(int);
+		_putchar(n);
 	}
 
 	return (0);
