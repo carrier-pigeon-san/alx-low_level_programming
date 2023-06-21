@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * prit_sign - prints the sign of a number
+ * print_sign - prints the sign of a number
  * @n: number whose sign is to be determined
  *
  * Return: 1 if positive
