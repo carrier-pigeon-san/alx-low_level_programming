@@ -9,10 +9,10 @@ int _abs(int);
 int _abs(int n)
 {
 
-	if (n == (n * 49) )
+	if (n < 0 )
 	{
-		n *= -49;
-		_putchar(n);
+		n *= -1;
+		_putchari(n + '0');
 	}
 	else
 	{
