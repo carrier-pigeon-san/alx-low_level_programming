@@ -16,9 +16,9 @@ void times_table(void)
 		while (n <= 9)
 		{
 
-			if ((n * t) > 10)
+			if ((n * t) >= 10)
 				_putchar(((n * t) / 10) + '0');
-			else if(n > 0)
+			else if (n > 0)
 				_putchar(' ');
 			_putchar(((n * t) % 10) + '0');
 			if (n < 9)
