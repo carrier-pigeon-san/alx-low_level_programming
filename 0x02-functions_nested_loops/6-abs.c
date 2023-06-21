@@ -3,7 +3,7 @@
  * _abs - computes the absolute vale of an integer
  * @int: number whose absolute value is to be determined
  *
- * Return: Always 0 (Success)
+ * Return: Absolute value
  */
 int _abs(int);
 int _abs(int n)
@@ -11,13 +11,12 @@ int _abs(int n)
 
 	if (n < 0 )
 	{
-		n *= -1;
-		_putchar(n + '0');
+		return (n * -1);
+		
 	}
 	else
 	{
-		_putchar(n);
+		return (n);
 	}
 
-	return (0);
 }
