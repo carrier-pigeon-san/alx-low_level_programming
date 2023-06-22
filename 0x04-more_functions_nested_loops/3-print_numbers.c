@@ -4,15 +4,14 @@
  *
  * Return: Always 0
  */
-
 void print_numbers(void)
 {
 	int c;
 
-	c = 48;
-	while (c < 58)
+	c = 0;
+	while (c <= 9)
 	{
-		_putchar(c);
+		_putchar(c + '0');
 		c++;
 	}
 	_putchar('\n');
