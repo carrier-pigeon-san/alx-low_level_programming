@@ -18,10 +18,9 @@ void print_square(int size)
 			j = 0;
 			while (j < n)
 			{
-				_putchar(' ');
+				_putchar('#';
 				j++;
 			}
-			_putchar('\\');
 			_putchar('\n');
 			i++;
 		}
