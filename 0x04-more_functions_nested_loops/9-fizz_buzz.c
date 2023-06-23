@@ -18,9 +18,10 @@ int main(void)
 		else if ((n % 15) == 0)
 			printf("FizzBuzz");
 		else
-			printf("%d ", n);
+			printf("%d", n);
+		if (n != 100)
+			printf(" ");
 		n++;
 	}
-	printf("\n");
 	return (0);
 }
