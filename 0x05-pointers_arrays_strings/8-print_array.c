@@ -15,9 +15,11 @@ void print_array(int *a, int n)
 	int c;
 
 	c = 0;
-	while (c <= n)
+	n = 0;
+	while (c < n)
 	{
 		printf("%d, ", *(a + n));
 		c++;
+		n++;
 	}
 }
