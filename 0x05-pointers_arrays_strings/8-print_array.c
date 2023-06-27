@@ -17,5 +17,6 @@ void print_array(int *a, int n)
 	while (n <= 5)
 	{
 		printf("%d, ", *(a + n));
+		n++;
 	}
 }
