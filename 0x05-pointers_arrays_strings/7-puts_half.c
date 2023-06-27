@@ -17,10 +17,14 @@ void puts_half(char *str)
 		l++;
 	}
 	if (l % 2 == 0)
+	{
 		l = l / 2;
+	}
 	else
+	{
 		l1 = l - 1;
 		l = l1 / 2;
+	}
 	while (str[l] != '\0')
 	{
 		_putchar(str[l]);
