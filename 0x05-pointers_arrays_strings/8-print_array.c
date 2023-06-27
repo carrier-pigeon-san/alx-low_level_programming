@@ -18,6 +18,6 @@ void print_array(int *a, int n)
 	while (c <= n)
 	{
 		printf("%d, ", *(a + n));
-		n++;
+		c++;
 	}
 }
