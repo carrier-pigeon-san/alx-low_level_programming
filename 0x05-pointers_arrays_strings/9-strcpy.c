@@ -18,9 +18,8 @@ char *_strcpy(char *dest, char *src)
 			*dest = *src;
 		else
 			*(dest + c) = *(src + c);
-		if (src[c] == 0)
-			c += 1;
 		c++;
 	}
+	dest[c] = '\0';
 	return (dest);
 }
