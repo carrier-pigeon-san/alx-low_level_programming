@@ -16,14 +16,15 @@ void rev_string(char *s)
 	c = 0;
 	while (s[c] != '\0')
 		c++;
-	j = ;
+	j = c;
 	c--;
 	i = 0;
-	while (c >= j / 2)
+	while (i >= j / 2)
 	{
-		w = s[c];
-		s[c] = s[i];
-		s[i] = w;
-		c++;
+		w = s[i];
+		s[i] = s[c];
+		s[c] = w;
+		c--;
+		i++;
 	}
 }
