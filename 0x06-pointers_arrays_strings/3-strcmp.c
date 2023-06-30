@@ -17,18 +17,9 @@ int _strcmp(char *s1, char *s2)
 	c = 0;
 	while (s1[c] != '\0')
 	{
-		if (s1[c] < s2[c])
+		if (s1[c] != s2[c])
 		{
-			return (-15);
-		}
-		else if (s1[c] == s2[c])
-		{
-			return (0);
-			continue;
-		}
-		else
-		{
-			return (15);
+			return (s1[c] - s2[c]);
 		}
 		c++;
 	}
