@@ -22,8 +22,7 @@ char *cap_string(char *str)
 			{
 				if (sym[s] == str[n])
 				{
-					if (str[c] > 96 && str[c] < 123)
-						str[c] -= 32;
+					str[c] -= 32;
 				}
 				s++;
 			}
