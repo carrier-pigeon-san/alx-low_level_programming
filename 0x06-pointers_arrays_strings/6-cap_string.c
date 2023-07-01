@@ -13,7 +13,7 @@ char *cap_string(char *str)
 
 	c = 0;
 	n = c - 1;
-	while (str[c] != '\0' && str[n] != '\0')
+	while (str[c] != '\0')
 	{
 		if (str[c] > 96 && str[c] < 123)
 		{
