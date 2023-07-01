@@ -18,7 +18,7 @@ char *cap_string(char *str)
 		if (str[c] > 96 && str[c] < 123)
 		{
 			s = 0;
-			while (sym[s] != '\0')
+			while (sym[s] != '\0' str[n] != '\0')
 			{
 				if (sym[s] == str[n])
 				{
