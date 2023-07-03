@@ -6,7 +6,7 @@
  *
  * Return: pointer to bytes in s
  */
-char *_strpbrk(char *s, char accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
 
