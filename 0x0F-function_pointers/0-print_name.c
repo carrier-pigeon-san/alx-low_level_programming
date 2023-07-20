@@ -10,14 +10,13 @@ void print_name(char *name, void (*f)(char *))
 {
 	int i;
 	if (f == NULL)
+	{
 		i = 0;
-		while (name[i])
+		while (name[i] != '\0')
 		{
-			if (name[i] >= 'a' && name[i] <= 'z')
-			{
-				putchar(name[i]);
-			}
+			putchar(name[i]);
 			i++;
 		}
+	}
 	f(name);
 }
