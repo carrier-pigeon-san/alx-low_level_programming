@@ -8,7 +8,16 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
+	int i;
 	if (f == NULL)
-		print_name_as_is(name);
+		i = 0;
+		while (name[i])
+		{
+			if (name[i] >= 'a' && name[i] <= 'z')
+			{
+				putchar(name[i]);
+			}
+			i++;
+		}
 	f(name);
 }
