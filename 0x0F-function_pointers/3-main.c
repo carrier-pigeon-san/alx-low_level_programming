@@ -19,7 +19,10 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(100);
 	}
-	(*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
+	int (*fun_op)(int, int);
+
+	fun_op = get_op_func(argv[2]);
+	printf("%d\n", fun_op(atoi(argv[1]), atoi(argv[3])));
 
 	return (0);
 }
