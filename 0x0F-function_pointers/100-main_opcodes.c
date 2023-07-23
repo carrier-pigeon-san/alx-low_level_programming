@@ -13,12 +13,11 @@ void print_opcodes(unsigned char *address, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		printf("%02x", address[i]);
-		if (i < size)
-			printf(" ");
+		if (i == size - 1)
+			printf("%02x\n", address[i]);
+		printf("%02x ", address[i]);
 	}
 
-	printf("\n");
 }
 
 /**
