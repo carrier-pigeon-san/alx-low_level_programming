@@ -18,7 +18,7 @@ void print_opcodes(unsigned char *address, int size)
 			printf(" ");
 	}
 
-	//printf("\n");
+	printf("\n");
 }
 
 /**
@@ -31,7 +31,7 @@ void print_opcodes(unsigned char *address, int size)
  */
 int main(int argc, char **argv)
 {
-	if (argc > 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
