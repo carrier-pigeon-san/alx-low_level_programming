@@ -13,9 +13,10 @@ void print_opcodes(unsigned char *address, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		if (i == size - 1)
+		if (i < size - 1)
+			printf("%02x ", address[i]);
+		else
 			printf("%02x\n", address[i]);
-		printf("%02x ", address[i]);
 	}
 
 }
@@ -40,7 +41,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(2);
 	}
-	unsigned char *main_address = (unsigned char *)&main;
+	unsigned char *main_address = (unsigned char *)main;
 
 	int main_size = atoi(argv[1]);
 
