@@ -6,7 +6,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	list_t *temp = h;
+	const list_t *temp = h;
 	int nod = 0;
 
 	while (temp != NULL)
