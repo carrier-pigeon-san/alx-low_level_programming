@@ -9,6 +9,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	int l = 0;
 	list_t *nod;
+	list_t *temp;
 
 	while (str[l] != '\0')
 		l++;
@@ -20,16 +21,21 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	nod = *head;
+	temp = *head;
 
-	while (nod != NULL)
+	while (temp != NULL)
 	{
-		nod = nod->next;
+		temp = temp->next;
 	}
 
 	nod->len = l;
 	nod->str = strdup(str);
 	nod->next = NULL;
+
+	if (temp)
+		temp->next = nod;
+	else
+		*head = nod;
 
 	return (nod);
 }
