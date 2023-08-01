@@ -3,6 +3,19 @@
 
 #include <stdio.h>
 
+/**
+ * struct llist - Struct llist
+ * @str: string
+ * @len: length of str
+ * @next: pointer to next node
+ */
+typedef struct llist
+{
+	char *str;
+	int  len;
+	struct llist *next;
+} list_t;
+
 int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
