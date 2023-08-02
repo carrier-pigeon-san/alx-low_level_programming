@@ -8,7 +8,5 @@
 
 int _atoi(char *s)
 {
-	for (; *s != '\0'; s++)
-		;
 	return (0);
 }
