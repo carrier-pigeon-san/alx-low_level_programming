@@ -22,7 +22,7 @@ listint_t *get_node_at_index(listint_t *head, unsigned int index)
 	}
 
 	if (temp != NULL)
-		temp = temp->next;
+		return (temp);
 	else
 		return (NULL);
 
