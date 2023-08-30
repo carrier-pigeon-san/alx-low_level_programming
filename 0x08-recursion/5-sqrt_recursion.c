@@ -5,7 +5,7 @@ int p_square(int i, int v);
  * @n: integer argument
  * Return: square root
  */
-it _sqrt_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	int v = 2;
 
