@@ -26,5 +26,5 @@ int optimus(int i, int v)
 		return (1);
 	if (i % v == 0)
 		return (0);
-	return (optimus(n, v + 1));
+	return (optimus(i, v + 1));
 }
