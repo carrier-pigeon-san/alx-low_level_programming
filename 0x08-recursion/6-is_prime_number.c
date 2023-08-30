@@ -1,9 +1,9 @@
-i#include "main.h"
+#include "main.h"
 int optimus(int i, int v);
 /**
  * is_prime_number - determinew if an integer is a prime number
  * @n: integer argument
- * Return: 1(yes), 0(no)
+ * Return: 1(yes), 0(no)i
  */
 int is_prime_number(int n)
 {
