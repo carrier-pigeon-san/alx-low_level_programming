@@ -26,7 +26,7 @@ int p_square(int i, int v)
 {
 	if (v > i / 2)
 		return (-1);
-	if (n % v == 0 && i / v == v)
+	if (i % v == 0 && i / v == v)
 		return (v);
 	return (p_square(i, v + 1));
 }
