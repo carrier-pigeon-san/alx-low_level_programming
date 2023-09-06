@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 	int coin = 0;
 	int denom[5] = {25, 10, 5, 2, 1};
 
-	if (arg != 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
