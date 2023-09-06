@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 	for (i = 0; i < 5; i++)
 	{
 		num = nal / denom[i];
-		coin += num
+		coin += num;
 		bal -= num * denom[i];
 	}
 	printf("%d\n", coin);
