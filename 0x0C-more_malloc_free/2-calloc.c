@@ -18,7 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (mem == NULL)
 		return (NULL);
 	memr = (unsigned char *)mem;
-	for (i = 0; i < nmemb; i++)
+	for (i = 0; i < nmemb * size; i++)
 		memr[i] = 0;
 	return (mem);
 }
