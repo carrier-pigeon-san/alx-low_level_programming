@@ -36,7 +36,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (c = 0; c <= i; c++)
 		name_cpy[c] = name[c];
 	for (c = 0; c <= j; c++)
-		owner_cpy[c] = name[c];
+		owner_cpy[c] = owner[c];
 
 	doggy->name = name_cpy;
 	doggy->owner = owner_cpy;
