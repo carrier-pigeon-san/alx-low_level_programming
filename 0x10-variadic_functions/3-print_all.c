@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 /**
  * print_all - prints anythang
- * @format - format specifier
+ * @format: format specifier
  *
  * Return: void;
  */
@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 	int i;
 	char ch;
 	int dec;
-	double flt;
+	float flt;
 	char *chars;
 
 	va_start(val, format);
@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 					dec = va_arg(val, int),	printf("%d", dec);
 					break;
 			case 'f':
-					flt = va_arg(val, double), printf("%f", flt);
+					flt = (float) va_arg(val, double), printf("%f", flt);
 					break;
 			case 's':
 					chars = va_arg(val, char*), printf("%s", chars != NULL ? chars : "(nil)");
