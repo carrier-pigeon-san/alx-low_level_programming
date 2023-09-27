@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * get_nodeint_at_index - returns the nth node of linked list listint_t
- * @head - pointer to head of linked list listint_t
+ * @head: pointer to head of linked list listint_t
  * @index: self explanatory
  *
  * Return: address of the node at index/NULL if doesn't exist
@@ -14,7 +14,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	temp = malloc(sizeof(listint_t));
 	if (temp == NULL)
 		return (NULL);
-	
+
 	temp = head;
 	while (i < index)
 	{
