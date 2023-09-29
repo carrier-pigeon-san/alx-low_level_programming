@@ -1,11 +1,11 @@
 #include "main.h"
+int _pow(int x, int y);
 /**
  * binary_to_uint - converts a binary number to an unsigned int
  * @b: pointer to a string of 0 and 1 chars
  *
  * Return: unsigned int/0
  */
-int _pow(int x, int y);
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int dec;
@@ -15,7 +15,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 
 	for (len = 0; b[len] != '\0'; len++)
-		if (b[len] !='0' && b[len] != '1')
+		if (b[len] != '0' && b[len] != '1')
 			return (0);
 	len--;
 	for (i = dec = 0; len >= 0; len --, i++)
@@ -24,7 +24,7 @@ unsigned int binary_to_uint(const char *b)
 	return (dec);
 }
 /**
- * _pow_recursion - returns the value of x raised to power y
+ * _pow - returns the value of x raised to power y
  * @x: integer argument
  * @y: exponential
  *
