@@ -21,6 +21,8 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
+	if (av[0][0] == '\0' && av[1][0] == '\0')
+		return (-1);
 	buildstr = malloc(sizeof(char) * 1024);
 	if (buildstr == NULL)
 		return (-1);
@@ -124,7 +126,7 @@ void checkerr99(int file_to, char *av, char *buffer)
 		close(file_to);
 		free(buffer);
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av);
-		exit(98);
+		exit(99);
 	}
 }
 /**
