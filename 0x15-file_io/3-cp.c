@@ -42,7 +42,7 @@ int main(int ac, char **av)
 	*	exit(99);
 	* }
 	*/
-	while ((r_src = read(file_from, buildstr, 10)) != '\0')
+	while ((r_src = read(file_from, buildstr, 1024)) != '\0')
 	{
 		checkerr98(r_src, av[1], buildstr);
 		/*
