@@ -127,10 +127,9 @@ void checkerr99(int file_to, char *av, char *buffer)
 		exit(98);
 	}
 }
-/*
+/**
  * checkerr100 - check if file has closed
  * @fildes: file descriptor
- * @av: name of file
  * @buffer: buffer
  *
  * Return: void
