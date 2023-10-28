@@ -8,13 +8,5 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int bitsLen = 0;
-	int tempBin = n;
-
-	while (tempBin != 0)
-		bitsLen++;
-
-	if (index >= bitsLen)
-		return (-1);
 	return ((n >> index) & 1);
 }
