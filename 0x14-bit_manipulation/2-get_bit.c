@@ -8,7 +8,7 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int bitsLen = 0;
+	unsigned int bitsLen = 0;
 	int tempBin = n;
 
 	while (tempBin != 0)
