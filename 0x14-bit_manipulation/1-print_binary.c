@@ -7,7 +7,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int bitsLen = sizeof(n) * 8 - 1;
+	int bitsLen = sizeof(n) * 8;
 	int bitVal = 0;
 
 	if (n == 0)
