@@ -1,6 +1,7 @@
 # Ignore files:
 main.c
 pass.py
+pal.py
 a
 b
 c
