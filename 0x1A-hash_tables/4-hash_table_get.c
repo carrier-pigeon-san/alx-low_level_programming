@@ -20,15 +20,12 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	{
 		if (strcmp(ht->array[index]->key, key) == 0)
 			return (ht->array[index]->value);
-		else
+		probe = ht->array[index];
+		while (probe != NULL)
 		{
-			probe = ht->array[index];
-			while (probe != NULL)
-			{
-				probe = probe->next;
-				if (strcmp(probe->key, key) == 0)
-					return (probe->value);
-			}
+			probe = probe->next;
+			if (strcmp(probe->key, key) == 0)
+				return (probe->value);
 		}
 	}
 	return (NULL);
