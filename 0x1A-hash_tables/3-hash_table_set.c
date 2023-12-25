@@ -19,7 +19,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	rec->value = strdup(value);
 	rec->next = NULL;
 
-	if (key == NULL || strlen(key) == 0)
+	if (key == NULL || strlen(key) == 0 || ht == NULL)
 	{
 		free(rec);
 		return (0);
