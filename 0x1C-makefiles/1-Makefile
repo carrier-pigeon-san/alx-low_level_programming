@@ -1,10 +1,12 @@
 SHELL := /bin/bash
 
-.PHONY: all
+.PHONY: all school
 
-CC := gcc
+CC = gcc
 
-SRC := $(wildcard *.c)
+SRC = main.c school.c
 
-all: $(SRC)
-	${CC} ${SRC} -o school
+all: school
+
+school: $(SRC)
+	$(CC) $(SRC) -o school
