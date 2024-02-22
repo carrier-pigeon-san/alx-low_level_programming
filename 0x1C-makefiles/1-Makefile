@@ -4,7 +4,7 @@ SHELL := /bin/bash
 
 CC := gcc
 
-SRC := main.c school.c
+SRC := $(wildcard *.c)
 
 all: $(SRC)
 	${CC} ${SRC} -o school
