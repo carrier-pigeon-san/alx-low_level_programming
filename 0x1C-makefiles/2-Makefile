@@ -1,7 +1,5 @@
 SHELL := /bin/bash
 
-.PHONY: all school
-
 CC = gcc
 
 SRC = main.c school.c
@@ -10,7 +8,8 @@ OBJ = $(wildcard *.o)
 
 NAME = school
 
-all: school
+all: $(NAME)
 
-school: $(SRC)
-	$(CC) $^ -o $(NAME)
+$(NAME): $(SRC) $(OBJ)
+	$(CC) -c -o $(OBJ) $(SRC)
+	$(CC) $(OBJ) -o $(NAME)
