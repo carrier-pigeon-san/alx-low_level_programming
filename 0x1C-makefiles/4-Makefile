@@ -1,0 +1,37 @@
+SHELL := /bin/bash
+
+.PHONY: all clean oclean fclean re
+
+CC = gcc
+
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+SRC = main.c school.c
+
+OBJ = $(SRC:%.c=%.o)
+
+NAME = school
+
+RM = rm
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $^ -o $@
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	$(RM) -f *~ $(NAME)
+
+oclean:
+	$(RM) -f $(OBJ)
+
+fclean:
+	$(RM) -f *~ $(NAME)
+	$(RM) -f $(OBJ)
+
+re:
+	$(RM) -f $(OBJ)
+	make all -f 3-Makefile
