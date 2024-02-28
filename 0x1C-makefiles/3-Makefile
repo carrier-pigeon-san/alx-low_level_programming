@@ -21,13 +21,13 @@ $(NAME): $(OBJ)
 	$(CC) -c $< -o $@
 
 clean:
-	$(RM) -f *~ school
+	$(RM) -f *~ $(NAME)
 
 oclean:
 	$(RM) -f $(OBJ)
 
 fclean:
-	$(RM) -f *~ school
+	$(RM) -f *~ $(NAME)
 	$(RM) -f $(OBJ)
 
 re:
