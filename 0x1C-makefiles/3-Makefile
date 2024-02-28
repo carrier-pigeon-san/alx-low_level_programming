@@ -24,12 +24,12 @@ clean:
 	$(RM) -f *~ school
 
 oclean:
-	$(RM) -f *.o
+	$(RM) -f $(OBJ)
 
 fclean:
 	$(RM) -f *~ school
-	$(RM) -f main.o school.o
+	$(RM) -f $(OBJ)
 
 re:
-	$(RM) -f main.o school.o
+	$(RM) -f $(OBJ)
 	make all -f 3-Makefile
