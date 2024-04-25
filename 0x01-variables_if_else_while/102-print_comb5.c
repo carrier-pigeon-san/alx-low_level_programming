@@ -27,8 +27,11 @@ int main(void)
 						putchar(' ');
 						putchar(digit2);
 						putchar(digit1);
-						putchar(',');
-						putchar(' ');
+						if (digit4 != 57 || digit3 != 56)
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 					digit1++;
 				}
@@ -41,6 +44,7 @@ int main(void)
 
 		digit4++;
 	}
+	putchar('\n');
 
 	return (0);
 }
