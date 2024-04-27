@@ -20,8 +20,7 @@ int main(void)
 				digit1 = 48;
 				while (digit1 <= 57)
 				{
-					if ((digit2 >= digit4 && digit1 >= digit3)
-					&& !(digit2 == digit4 && digit1 == digit3))
+					if ((digit2 * 10 + digit1) > (digit4 * 10 + digit3))
 					{
 						putchar(digit4);
 						putchar(digit3);
@@ -29,9 +28,8 @@ int main(void)
 						putchar(digit2);
 						putchar(digit1);
 					}
-					if ((digit2 >= digit4 && digit1 >= digit3)
-					&& !(digit2 == digit4 && digit1 == digit3)
-					&& (digit4 != 57 || digit3 != 56))
+					if (((digit2 * 10 + digit1) > (digit4 * 10 + digit3))
+					&& (digit3 != 56 || digit4 != 57))
 					{
 						putchar(',');
 						putchar(' ');
