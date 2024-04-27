@@ -17,34 +17,33 @@ int main(void)
 			digit2 = 48;
 			while (digit2 <= 57)
 			{
-				digit1 = 49;
+				digit1 = 48;
 				while (digit1 <= 57)
 				{
-					if (digit2 >= digit4 && digit1 > digit3)
+					if ((digit2 >= digit4 && digit1 >= digit3)
+					&& !(digit2 == digit4 && digit1 == digit3))
 					{
 						putchar(digit4);
 						putchar(digit3);
 						putchar(' ');
 						putchar(digit2);
 						putchar(digit1);
-						if (digit4 != 57 || digit3 != 56)
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					}
+					if ((digit2 >= digit4 && digit1 >= digit3)
+					&& !(digit2 == digit4 && digit1 == digit3)
+					&& (digit4 != 57 || digit3 != 56))
+					{
+						putchar(',');
+						putchar(' ');
 					}
 					digit1++;
 				}
-
 				digit2++;
 			}
-
 			digit3++;
 		}
-
 		digit4++;
 	}
 	putchar('\n');
-
 	return (0);
 }
