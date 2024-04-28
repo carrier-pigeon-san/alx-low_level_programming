@@ -35,7 +35,7 @@ void p_itoa(int product)
 {
 	int p_val, index, count, product_cp = product;
 	char digit;
-	char mutable_str[] = "     ";
+	char mutable_str[] = "    ";
 
 	for (p_val = 0; product_cp != 0; p_val++)
 		product_cp /= 10;
