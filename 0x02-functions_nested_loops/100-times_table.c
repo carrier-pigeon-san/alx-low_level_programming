@@ -40,15 +40,15 @@ void p_itoa(int product)
 	for (p_val = 0; product_cp != 0; p_val++)
 		product_cp /= 10;
 
-	index = p_val > 0 ? 5 - p_val : 4;
+	index = p_val > 0 ? 4 - p_val : 3;
 
-	for (count = 4; count >= index; count--)
+	for (count = 3; count >= index; count--)
 	{
 		digit = product % 10 + '0';
 		product /= 10;
 		mutable_str[count] = digit;
 	}
 
-	for (count = 0; count < 5; count++)
+	for (count = 0; count < 4; count++)
 		_putchar(mutable_str[count]);
 }
